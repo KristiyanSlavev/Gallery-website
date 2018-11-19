@@ -12,10 +12,10 @@ var LocalStrategy = require('Strategy');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost//loginapp');
-var db = mongoose.connection();﻿
+var db = mongoose.connection;﻿
 
 var routes = require('./routes/index');
-var users = require('./rutes/users');
+var users = require('./routes/users');
 
 //Initialise the app
 var app = express();
@@ -27,7 +27,7 @@ app.set('view engine', 'handlebars');
 
 //BodyParser Middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencode({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Set static folder

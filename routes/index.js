@@ -1,5 +1,5 @@
 var express = require('express');
-var routes = express.Router();
+var router = express.Router();
 
 //Get homepage
 router.get('/', function(req, res) {

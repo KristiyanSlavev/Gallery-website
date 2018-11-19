@@ -18,10 +18,13 @@
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
+    "flash": "^1.1.0",
     "mongodb": "*",
     "mongoose": "*",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "strategy": "^1.1.1",
+    "users": "^2.0.0"
   }
 }
